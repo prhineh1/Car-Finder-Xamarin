@@ -1,0 +1,2 @@
+C:\Users\dell latitude e6420\documents\visual studio 2017\Projects\CarFinderXamarin\CarFinderXamarin\CarFinderXamarin.UWP\CarFinderXamarin.UWP.csproj;x86
+C:\Users\dell latitude e6420\documents\visual studio 2017\Projects\CarFinderXamarin\CarFinderXamarin\CarFinderXamarin\CarFinderXamarin.csproj;neutral

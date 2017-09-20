@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarFinderXamarin"
+             x:Class="CarFinderXamarin.MainPage"
+             Title="Home">
+
+    <StackLayout
+        BackgroundColor="BlueViolet"
+        x:Name="mainLayout"
+        >
+        <Label 
+            Text="Welcome to The Car Finder"
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center"
+            TextColor = "WhiteSmoke"
+            />
+        <Picker 
+            Title="Select a Year"
+            SelectedIndexChanged="OnyearPickerSelectedIndexChanged"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            x:Name="yearPicker"
+            >
+        </Picker>
+        <Picker
+            x:Name="makesPicker"
+            Title="Select a Make"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="False"
+            SelectedIndexChanged="makesPicker_SelectedIndexChanged">
+        </Picker>
+        <Picker
+            x:Name="modelsPicker"
+            Title="Select a Model"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="False"
+            SelectedIndexChanged="modelsPicker_SelectedIndexChanged"
+            >
+        </Picker>
+        <Button 
+            Text="View Pictures"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"
+            IsVisible="false"
+            x:Name="carSearch"
+            />
+        <Button
+            Text="View Recall Information"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            IsVisible="false"
+            x:Name="recallSearch"
+            Clicked="recallSearch_Clicked" />
+    </StackLayout>
+
+</ContentPage>
